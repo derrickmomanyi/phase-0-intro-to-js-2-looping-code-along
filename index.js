@@ -1,27 +1,15 @@
-const gifts = ["teddy bear", "drone", "doll"]
 
+const names = (["Ada", "Brendan", "Ali"], "birthday");
+let thankYouArray = [];
 
-function wrapGifts() {
-    for(i=0; i<gifts.length;i++) {
-        console.log(`WRAPPED ${gifts[i]} and added a bow!`)
-
-}
-return gifts;
-}
-
-wrapGifts(gifts);
-
-const cards = ["Ada", "Brendan", "Ali"]
-console.log(cards.length)
-function writeCards(){
-        for(i=0; i<cards.length;i++) {
-            console.log(`Thank you, ${cards[i]}, for the wonderful birthday gift!`)
+function writeCards(names, event){
+        for (let i=0; i<names.length; i++) {
+            thankYouArray.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
+         
         }
-return cards;
-
+        return thankYouArray;
 }
 
-writeCards(cards);
 
 
 function countDown() {
@@ -32,4 +20,3 @@ function countDown() {
         
 }}
 
-console.log(countDown(10));
